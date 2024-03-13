@@ -1,0 +1,23 @@
+package singleton;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Configuration configurationOne = Configuration.getInstance();
+		Configuration configurationTwo = Configuration.getInstance();
+		
+		System.out.println(configurationOne);
+		System.out.println(configurationTwo);
+		
+		System.out.println(configurationOne == configurationTwo);
+		
+		System.out.println("Configuracion 1 variable option1 "+configurationOne.getOption1());
+		System.out.println("Configuracion 2 variable option1 "+configurationTwo.getOption1());
+		
+		configurationOne.setOption1("ahora cambia");
+		
+		System.out.println("Configuracion 1 variable option1 "+configurationOne.getOption1());
+		System.out.println("Configuracion 2 variable option1 "+configurationTwo.getOption1());
+	}
+
+}

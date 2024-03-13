@@ -1,0 +1,13 @@
+package singleton;
+
+public class Configuration {
+	
+	private static Configuration instance = null;
+	private String option1;
+    private String option2;
+    
+    private Configuration() {
+    	this.option1 = "valor1";
+        this.option2 = "valor2";
+    }
+}

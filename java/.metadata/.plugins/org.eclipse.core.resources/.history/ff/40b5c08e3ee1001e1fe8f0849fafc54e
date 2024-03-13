@@ -1,0 +1,15 @@
+package singleton;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Configuration configurationOne = Configuration.getInstance();
+		Configuration configurationTwo = Configuration.getInstance();
+		
+		System.out.println(configurationOne);
+		System.out.println(configurationTwo);
+		
+		System.out.println(configurationOne == configurationTwo);
+	}
+
+}

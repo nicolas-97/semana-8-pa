@@ -50,4 +50,4 @@ if __name__ == '__main__':
     notifier.detach(subscriber_one)
 
     # Notificamos de nuevo
-    notifier.notify("Solo quedó un observador.")
+    notifier.notify("Solo quedó un suscriptor.")
